@@ -1,0 +1,21 @@
+diff -ur o-GSDock/main.m GSDock/main.m
+--- o-GSDock/main.m	2003-07-05 19:10:29.000000000 -0600
++++ GSDock/main.m	2004-11-13 14:39:16.513249133 -0700
+@@ -15,11 +15,15 @@
+  * Initialise and go!
+  */
+ 
+-int main(int argc, const char *argv[]) 
++int main(int argc, const char *argv[], const char* env[]) 
+ {
+   NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+   AppController     *controller;
+-  
++
++#ifdef GS_PASS_ARGUMENTS
++  [NSProcessInfo initializeWithArguments: argv count: argc environment: env];
++#endif
++ 
+   [NSApplication sharedApplication];
+ 
+   //createMenu();
