@@ -1,4 +1,5 @@
-Summary:	Dock for GNUStep
+Summary:	Dock for GNUstep
+Summary(pl):	Dok dla GNUstepa
 Name:		GSDock
 Version:	0.0.1
 Release:	1
@@ -23,7 +24,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %endif
 
 %description
-Dock for GNUStep
+Dock for GNUstep.
+
+%description -l pl
+Dok dla GNUstepa.
 
 %prep
 %setup -q -n %{name}
