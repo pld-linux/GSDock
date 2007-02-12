@@ -1,5 +1,5 @@
 Summary:	Dock for GNUstep
-Summary(pl.UTF-8):   Dok dla GNUstepa
+Summary(pl.UTF-8):	Dok dla GNUstepa
 Name:		GSDock
 Version:	0.0.1
 Release:	1
